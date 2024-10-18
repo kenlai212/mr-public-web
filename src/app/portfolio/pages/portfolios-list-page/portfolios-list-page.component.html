@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row head-row">
+        <div class="col-1"><img src="/assets/icons/arrow_circle_left.svg" (click)="clickBack()"></div>
+        <div class="col-11 label title">Portfolio</div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-4 card-container">
+            <app-card [cardModel]="lifeHackerCard" (click)="clickLifeHacker()"></app-card>
+        </div>
+        <div class="col-12 col-sm-4 card-container">
+            <app-card [cardModel]="medicalSentenceCard"></app-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.card{
+    background-color: lightslategray;
+    border-color: lightgray;
+    color: lightgray;
+}
+
+.card .title-container{
+    padding:10px;
+    font-size: 1.25em;
+}
+
+.card .image-container{
+    background-color: lightgray;
+    padding: 15px;
+    text-align: center;
+    height: 140px;
+}
+
+.card .description-container{
+    padding: 15px;
+    color: white;
+}
