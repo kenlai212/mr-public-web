@@ -17,7 +17,7 @@ export class SplashPageComponent{
       case "portfolio":
         this.router.navigate(['portfolios']);
         break;
-      case "ludas":
+      case "blog":
         break;
       case "distribution":
         this.router.navigate(['https://mandarinrobotics.co/distribution']);
