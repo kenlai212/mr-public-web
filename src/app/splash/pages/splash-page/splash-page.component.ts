@@ -20,7 +20,7 @@ export class SplashPageComponent{
       case "blog":
         break;
       case "distribution":
-        this.router.navigate(['https://mandarinrobotics.co/distribution']);
+        window.location.assign('https://mandarinrobotics.co/distribution');
         break;
     }
   }

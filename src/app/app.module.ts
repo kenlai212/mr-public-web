@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SplashPageComponent } from './splash/pages/splash-page/splash-page.component';
 import { PortfoliosListPageComponent } from './portfolio/pages/portfolios-list-page/portfolios-list-page.component';
-import { MrInfoPageComponent } from './distribution/pages/mr-info-page/mr-info-page.component';
 import { CardComponent } from './common/components/card/card.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { CardComponent } from './common/components/card/card.component';
     AppComponent,
     SplashPageComponent,
     PortfoliosListPageComponent,
-    MrInfoPageComponent,
     CardComponent
   ],
   imports: [
