@@ -12,7 +12,7 @@ RUN npm run build --prod
 
 FROM nginx:latest
 
-COPY --from=builder /usr/src/app/dist/mr-public-web/ /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/mr-public-web/ /usr/share/nginx/html/public
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
