@@ -20,7 +20,7 @@ export class SplashPageComponent{
       case "blog":
         break;
       case "distribution":
-        window.location.assign('https://mandarinrobotics.co/distribution');
+        window.open('https://mandarinrobotics.co/distribution/', "_blank");
         break;
     }
   }
