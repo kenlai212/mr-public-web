@@ -1,0 +1,51 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+@font-face {
+    font-family: mrserif;
+    src: url(/assets/fonts/modern-serif.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: mrsans;
+    src: url(/assets/fonts/Manulife_JH_Sans_Optimized_Light.ttf) format("opentype");
+}
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 11pt;
+    font-family: mrsans, sans-serif;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.label{
+    font-family: mrserif, serif;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.card{
+    padding: 10px;
+    color: darkslategrey
+}
+
+.mat-icon{
+    font-size: 1.5em;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.label-icon{
+    display:inline-block;
+    vertical-align:top;
+}
