@@ -1,7 +1,3 @@
-@use "@angular/material" as mat;
-
-@include mat.core();
-
 @font-face {
     font-family: mrserif;
     src: url(/assets/fonts/modern-serif.ttf) format("opentype");
@@ -26,4 +22,26 @@ body{
 
 .label{
     font-family: mrserif, serif;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.card{
+    padding: 10px;
+    color: darkslategrey
+}
+
+.mat-icon{
+    font-size: 1.5em;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.label-icon{
+    display:inline-block;
+    vertical-align:top;
 }
