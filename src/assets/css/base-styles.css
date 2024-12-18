@@ -35,13 +35,29 @@ body{
 
 .mat-icon{
     font-size: 1.5em;
+    margin-top: 0.25em;
 }
 
 .button{
     cursor: pointer;
 }
 
-.label-icon{
+/*label-icon{
     display:inline-block;
     vertical-align:top;
+}*/
+
+.div-inline{
+    display: inline-block;
+}
+
+.div-right{
+    text-align: right;
+}
+
+.top-nav-container{
+    background-color: slategrey;
+    border-bottom: 1px solid darkslateblue;
+    padding:10px;
+    color: darkslategray;
 }
