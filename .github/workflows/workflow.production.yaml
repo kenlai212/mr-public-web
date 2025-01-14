@@ -1,6 +1,9 @@
-name: Build
-run-name: Docker build on ${{ github.actor }} latest commit
-on: [push]
+name: Production_Build
+run-name: Production build triggered by ${{ github.actor }} on master branch
+on: 
+  push:
+    branches:
+      - master
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -22,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: kenlai212/mr-public-web
+          tags: kenlai212/mr-public-web:production
