@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-splash-page',
@@ -20,7 +21,7 @@ export class SplashPageComponent{
       case "blog":
         break;
       case "distribution":
-        window.open('https://mandarinrobotics.co/distribution/', "_blank");
+        window.open(environment.distributionURL, "_blank");
         break;
     }
   }
