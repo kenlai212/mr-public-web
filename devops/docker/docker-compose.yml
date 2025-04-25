@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mr-public-web:
+    image: mr-public-web
+    container_name: mr-public-web
+    ports:
+      - 3000:3000
+    networks:
+      - app-network
+networks:
+  app-network:
+    name: app-network
+    external: true

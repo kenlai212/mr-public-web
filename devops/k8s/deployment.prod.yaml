@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mr-public-web
+  namespace: mr-public
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: mr-public-web
+  template:
+    metadata:
+      labels:
+        run: mr-public-web
+    spec:
+      containers:
+      - name: mr-public-web
+        image: kenlai212/mr-public-web:production
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mr-public-web
+  namespace: mr-public
+  labels:
+    run: mr-public-web
+spec:
+  type: NodePort
+  selector:
+    run: mr-public-web
+  ports:
+    - protocol: TCP
+      name: mr-public-web
+      port: 3000
+      targetPort: 3000

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mr-public-web
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  tls:
+  - hosts:
+    - mandarinrobotics.co
+    secretName: mandarin-robotics-tls
+  rules:
+    - host: mandarinrobotics.co
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                  name: mr-public-web
+                  port:
+                    number: 3000
