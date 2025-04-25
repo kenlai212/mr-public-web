@@ -8,7 +8,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build:prod
+ARG BUILD_ENV
+
+RUN npm run build:${BUILD_ENV}
 
 FROM nginx:latest
 
