@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build:": "ng build",
+    "build:sandbox": "ng build --prod",
     "build:prod": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
