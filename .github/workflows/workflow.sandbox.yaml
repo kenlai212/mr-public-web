@@ -25,4 +25,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: kenlai212/mr-public-web:development
+          tags: kenlai212/mr-public-web:sandbox
+          build-args: BUILD_ENV=sandbox
