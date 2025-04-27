@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mr-public-web
+  labels:
+    run: mr-public-web
+spec:
+  type: NodePort
+  selector:
+    run: mr-public-web
+  ports:
+    - protocol: TCP
+      name: mr-public-web
+      port: 3000
+      targetPort: 3000
