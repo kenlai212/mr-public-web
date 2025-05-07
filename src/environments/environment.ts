@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  distributionURL: "http://4.144.62.48/distribution/"
+  distributionURL: "https://mandarinrobotics.co/distribution/"
 };
