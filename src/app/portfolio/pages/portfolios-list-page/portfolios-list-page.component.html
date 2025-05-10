@@ -5,10 +5,13 @@
     </div>
     <div class="row">
         <div class="col-12 col-sm-4 card-container">
-            <app-card [cardModel]="lifeHackerCard" (click)="clickLifeHacker()"></app-card>
+            <app-card [cardModel]="icdSearchCard" (click)="clickICDSearch()"></app-card>
         </div>
         <div class="col-12 col-sm-4 card-container">
-            <app-card [cardModel]="medicalSentenceCard"></app-card>
+            <app-card [cardModel]="semanticSearchCard" (click)="clickSemanticSearch()"></app-card>
+        </div>
+        <div class="col-12 col-sm-4 card-container">
+            <app-card [cardModel]="lifeHackerCard" (click)="clickLifeHacker()"></app-card>
         </div>
     </div>
 </div>
