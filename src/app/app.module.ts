@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { SplashPageComponent } from './splash/pages/splash-page/splash-page.component';
 import { PortfoliosListPageComponent } from './portfolio/pages/portfolios-list-page/portfolios-list-page.component';
 import { CardComponent } from './common/components/card/card.component';
+import { CommingSoonPageComponent } from './common/pages/comming-soon-page/comming-soon-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashPageComponent,
     PortfoliosListPageComponent,
-    CardComponent
+    CardComponent,
+    CommingSoonPageComponent
   ],
   imports: [
     BrowserModule,

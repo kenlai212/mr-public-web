@@ -11,6 +11,8 @@ export class PortfoliosListPageComponent {
   lifeHackerCard: CardModel;
   icdSearchCard: CardModel;
   semanticSearchCard: CardModel;
+  ragChatCard: CardModel;
+  ocrCard: CardModel;
   
   constructor(
     private router: Router
@@ -21,8 +23,14 @@ export class PortfoliosListPageComponent {
     this.icdSearchCard = new CardModel("ICD Search", "NLP analysis using Medical Language and Embedding models. This app can take a medical sentacnce input and predict the best match ICD codes output.");
     this.icdSearchCard.imagePath = "/assets/images/medical.png";
 
-    this.semanticSearchCard = new CardModel("Semantic Search","This app provides a semantic search function to find contextual information inside PDF files.")
+    this.semanticSearchCard = new CardModel("Semantic Search","This app provides a semantic search function to find contextual information inside PDF files.");
     this.semanticSearchCard.imagePath = "/assets/images/pdf_icon.png";
+
+    this.ragChatCard = new CardModel("RAG Chat","This chatbot uses RAG(Retrieval Augmented Generation) to search unstructured data like PDF files");
+    this.ragChatCard.imagePath = "/assets/images/chat_icon.png";
+
+    this.ocrCard = new CardModel("OCR","Optical Character Recognition - Abstract semantic information from images like TIFFs or PDFs");
+    this.ocrCard.imagePath = "/assets/images/ocr_icon.png";
   }
 
   clickBack(){
@@ -30,7 +38,8 @@ export class PortfoliosListPageComponent {
   }
 
   clickLifeHacker(){
-    window.open("https://mandarinrobotics.co/mr-web/home", "_blank");
+    this.router.navigate(['comming-soon']);
+    //window.open("https://mandarinrobotics.co/mr-web/home", "_blank");
   }
 
   clickICDSearch(){
@@ -39,5 +48,13 @@ export class PortfoliosListPageComponent {
 
   clickSemanticSearch(){
     window.open("https://mandarinrobotics.co/ai-demo/semantic-search", "_blank");
+  }
+
+  clickRagChat(){
+    this.router.navigate(['comming-soon']);
+  }
+
+  clickOCR(){
+    this.router.navigate(['comming-soon']);
   }
 }

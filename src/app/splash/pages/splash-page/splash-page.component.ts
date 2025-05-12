@@ -19,6 +19,7 @@ export class SplashPageComponent{
         this.router.navigate(['portfolios']);
         break;
       case "blog":
+        this.router.navigate(['comming-soon']);
         break;
       case "distribution":
         window.open(environment.distributionURL, "_blank");
