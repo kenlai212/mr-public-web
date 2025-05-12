@@ -18,10 +18,10 @@ export class PortfoliosListPageComponent {
     this.lifeHackerCard = new CardModel("Life Hacker", `Tracking progress of Goals and Tasks and Daily Journals. Also has a "Mental Notes" modules to keep track of ideas.`);
     this.lifeHackerCard.imagePath = "/assets/images/stop_watch.png";
 
-    this.icdSearchCard = new CardModel("ICD Search", "NLP analysis using MedSentVac language model. This app can take a medical sentacnce input and predict the best match ICD codes output.");
+    this.icdSearchCard = new CardModel("ICD Search", "NLP analysis using Medical Language and Embedding models. This app can take a medical sentacnce input and predict the best match ICD codes output.");
     this.icdSearchCard.imagePath = "/assets/images/medical.png";
 
-    this.semanticSearchCard = new CardModel("Semantic Search","Find contextual information inside PDF files.")
+    this.semanticSearchCard = new CardModel("Semantic Search","This app provides a semantic search function to find contextual information inside PDF files.")
     this.semanticSearchCard.imagePath = "/assets/images/pdf_icon.png";
   }
 
