@@ -1,3 +1,31 @@
+.topNavContainer{
+    background-color: lightslategray;
+    color: darkslategray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.topNavContainer .item{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.mandarinrobotics{
+    font-family: mrserif;
+    color: white;
+    font-size: 1.25em;
+}
+
+.aiDemo{
+    font-family: mrsans;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
 .head-row{
     margin-top:  15px;
     margin-bottom: 15px;

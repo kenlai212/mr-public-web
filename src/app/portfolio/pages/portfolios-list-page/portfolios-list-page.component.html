@@ -1,9 +1,11 @@
+<div class="topNavContainer">
+    <div class="item" (click)="clickBack()"><span class="mandarinrobotics">Mandarin Robotics</span><span class="aiDemo"> . Portfolio</span></div>
+</div>
 <div class="container">
+    <!--<div class="row head-row">
+        <div class="col-12 label title">Portfolio</div>
+    </div>-->
     <div class="row head-row">
-        <div class="col-1"><img src="/assets/icons/arrow_circle_left.svg" (click)="clickBack()"></div>
-        <div class="col-11 label title">Portfolio</div>
-    </div>
-    <div class="row">
         <div class="col-12 col-sm-4 card-container">
             <app-card [cardModel]="icdSearchCard" (click)="clickICDSearch()"></app-card>
         </div>
