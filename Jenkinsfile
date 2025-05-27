@@ -4,7 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello, Jenkins!"'
+                git branch: 'development', 'https://github.com/kenlai212/mr-public-web'
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    dockerImage = docker.build("kenlai212/mr-public-web:sandbox")
+                }
             }
         }
     }
