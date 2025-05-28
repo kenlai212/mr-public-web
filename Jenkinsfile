@@ -20,13 +20,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                script {
-                    sh '''
-                        ssh -tt kenlai212@10.0.1.4
-                        sudo docker pull kenlai212/mr-public-web:sandbox
-                        cd /home/kenlai212/mr-public-deployment/
-                        sudo docker compose up -d
-                    '''
+                sshagent() {
+                    sh 'ssh kenlai212@10.0.1.4'
+                    sh 'sudo docker pull kenlai212/mr-public-web:sandbox'
+                    sh 'cd /home/kenlai212/mr-public-deployment/'
+                    sh 'sudo docker compose up -d'
                 }
             }
         }
