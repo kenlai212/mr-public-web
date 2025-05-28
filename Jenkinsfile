@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                        ssh -tt kenlai212@10.0.1.4
+                        ssh -tt kenlai212@10.0.1.4 'bash -s << 'ENDSSH'
                         sudo docker pull kenlai212/mr-public-web:sandbox
                         cd /home/kenlai212/mr-public-deployment/
                         sudo docker compose up -d
