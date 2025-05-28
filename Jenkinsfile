@@ -23,7 +23,7 @@ pipeline {
                 sshagent(credentials : ['kenlai212']) {
                     sh 'ssh kenlai212@10.0.1.4'
                     sh 'docker pull kenlai212/mr-public-web:sandbox'
-                    sh 'cd $HOME/mr-public-deployment/'
+                    sh 'cd /home/kenlai212/mr-public-deployment/'
                     sh 'docker compose up -d'
                 }
             }
