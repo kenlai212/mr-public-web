@@ -23,7 +23,7 @@ pipeline {
                 sshagent(credentials : ['kenlai212']) {
                     sh 'ssh kenlai212@10.0.1.4'
                     sh 'docker pull kenlai212/mr-public-web:sandbox'
-                    sh 'docker run -i -t mr-public-web:sandbox -p 3000:3000 --network app-network'
+                    sh 'docker run -i -t mr-public-web:sandbox -p 3000:3000 --network app-network -d --name mr-public-web'
                 }
             }
         }
