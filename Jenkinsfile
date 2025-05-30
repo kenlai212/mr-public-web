@@ -10,7 +10,6 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build(env.DOCKER_IMAGE)
-                    dockerImage.tag(env.BUILD_TAG)
                 }
             }
         }
@@ -18,6 +17,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                        dockerImage.tag(env.BUILD_TAG)
                         dockerImage.push()
                     }
                 }
