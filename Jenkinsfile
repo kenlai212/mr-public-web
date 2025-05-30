@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build(env.DOCKER_IMAGE)
-                    dockerImage.tag(env.BUILD_NUMBER)
+                    dockerImage.tag(env.BUILD_TAG)
                 }
             }
         }
