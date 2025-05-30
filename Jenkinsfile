@@ -1,11 +1,15 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKER_IMAGE = "kenlai212/mr-public-web:sandbox"
+    }
+
     stages {
         stage('Build') {
             steps {
                 script {
-                    dockerImage = docker.build("kenlai212/mr-public-web:sandbox")
+                    dockerImage = docker.build($DOCKER_IMAGE)
                 }
             }
         }
