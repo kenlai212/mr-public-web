@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "kenlai212/mr-public-web:sandbox"
+        DOCKER_IMAGE = "kenlai212/mr-public-web:" + env.BUILD_NUMBER
     }
 
     stages {
