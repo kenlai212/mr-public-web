@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "kenlai212/mr-public-web:" + env.BUILD_NUMBER
+        DOCKER_IMAGE = "kenlai212/mr-public-web"
     }
 
     stages {
@@ -10,6 +10,7 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build(env.DOCKER_IMAGE)
+                    dockerImage.tag(env.BUILD_NUMBER)
                 }
             }
         }
