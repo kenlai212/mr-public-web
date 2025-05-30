@@ -5,6 +5,7 @@ pipeline {
         DOCKER_IMAGE = "kenlai212/mr-public-web:sandbox"
         TARGET_DEPLOY_SERVER_SSH_ACCOUNT = "kenlai212"
         TARGET_DEPLOY_SERVER_IP = "10.0.1.4"
+        CONTAINER_NAME = "mr-public-web"
     }
 
     stages {
