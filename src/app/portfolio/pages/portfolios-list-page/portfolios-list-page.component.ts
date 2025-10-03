@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CardModel } from 'src/app/common/components/card/card.component';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-portfolios-list-page',
@@ -8,6 +9,7 @@ import { CardModel } from 'src/app/common/components/card/card.component';
   styleUrls: ['./portfolios-list-page.component.scss']
 })
 export class PortfoliosListPageComponent {
+  baseHref:string = environment.basehref;
   lifeHackerCard: CardModel;
   icdSearchCard: CardModel;
   semanticSearchCard: CardModel;
@@ -18,19 +20,19 @@ export class PortfoliosListPageComponent {
     private router: Router
   ) { 
     this.lifeHackerCard = new CardModel("Life Hacker", `Tracking progress of Goals and Tasks and Daily Journals. Also has a "Mental Notes" modules to keep track of ideas.`);
-    this.lifeHackerCard.imagePath = "/assets/images/stop_watch.png";
+    this.lifeHackerCard.imagePath = `${this.baseHref}/assets/images/stop_watch.png`;
 
     this.icdSearchCard = new CardModel("ICD Search", "NLP analysis using Medical Language and Embedding models. This app can take a medical sentacnce input and predict the best match ICD codes output.");
-    this.icdSearchCard.imagePath = "/assets/images/medical.png";
+    this.icdSearchCard.imagePath = `${this.baseHref}/assets/images/medical.png`;
 
     this.semanticSearchCard = new CardModel("Semantic Search","This app provides a semantic search function to find contextual information inside PDF files.");
-    this.semanticSearchCard.imagePath = "/assets/images/pdf_icon.png";
+    this.semanticSearchCard.imagePath = `${this.baseHref}/assets/images/pdf_icon.png`;
 
     this.ragChatCard = new CardModel("RAG Chat","This chatbot uses RAG(Retrieval Augmented Generation) to search unstructured data like PDF files");
-    this.ragChatCard.imagePath = "/assets/images/chat_icon.png";
+    this.ragChatCard.imagePath = `${this.baseHref}/assets/images/chat_icon.png`;
 
     this.ocrCard = new CardModel("OCR","Optical Character Recognition - Abstract semantic information from images like TIFFs or PDFs");
-    this.ocrCard.imagePath = "/assets/images/ocr_icon.png";
+    this.ocrCard.imagePath = `${this.baseHref}/assets/images/ocr_icon.png`;
   }
 
   clickBack(){

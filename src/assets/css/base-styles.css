@@ -1,11 +1,11 @@
 @font-face {
     font-family: mrserif;
-    src: url(https://mandarinrobotics.co/assets/fonts/modern-serif.ttf) format("opentype");
+    src: url(https://assets.mandarinrobotics.co/modern-serif.ttf) format("opentype");
 }
 
 @font-face {
     font-family: mrsans;
-    src: url(https://mandarinrobotics.co/assets/fonts/Manulife_JH_Sans_Optimized_Light.ttf) format("opentype");
+    src: url(https://assets.mandarinrobotics.co/Manulife_JH_Sans_Optimized_Light.ttf) format("opentype");
 }
 
 *{

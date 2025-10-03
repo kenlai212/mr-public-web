@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:": "ng build --configuration development",
-    "build:sandbox": "ng build --configuration sandbox",
-    "build:prod": "ng build --prod --configuration production",
+    "build:": "ng build --configuration development --base-href /public --deploy-url /public/",
+    "build:sandbox": "ng build --configuration sandbox --base-href /public --deploy-url /public/",
+    "build:prod": "ng build --prod --configuration production --base-href /public --deploy-url /public/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

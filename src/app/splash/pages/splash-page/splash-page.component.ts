@@ -8,7 +8,8 @@ import { environment } from '../../../../environments/environment';
   styleUrls: ['./splash-page.component.scss']
 })
 export class SplashPageComponent{
-
+  baseHref:string = environment.basehref;
+  
   constructor(
     private router: Router
   ) { }
