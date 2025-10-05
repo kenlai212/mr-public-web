@@ -26,4 +26,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: kenlai212/mr-public-web:production
-          build-args: BUILD_ENV=production
+          build-args: BUILD_ENV=prod
